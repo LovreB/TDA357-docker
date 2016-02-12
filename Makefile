@@ -12,3 +12,10 @@ connect: start
 
 error: start
 	docker-compose logs postgres
+	+
+osx:
+	@docker-machine restart default
+	@echo
+	@echo
+	@echo "Kör följande kommando för att (förhoppningsvis) fixa Docker:"
+	@echo 'eval "$$(docker-machine env default)"'
